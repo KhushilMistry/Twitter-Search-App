@@ -1,10 +1,9 @@
-<h2>Twitter-Search-App</h2>
-This is the backend App for Twitter-Search-App. We are using Node Module <a href="https://github.com/ttezel/twit" target="_blank">twit</a>
- for API calling.
- <h2>Installing</h2>
- ```
- npm install
- nodemon index.js
- ```
- 
- 
+# Twitter Search App Backend
+This app is backend for Twitter Search App. We are using Node Module twit for API calling.
+#Installing
+```
+git clone https://github.com/KhushilMistry/Twitter-Search-App.git
+cd Twitter-Search-App
+npm install
+nodemon index.js
+```
