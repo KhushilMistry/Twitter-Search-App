@@ -1,0 +1,27 @@
+{
+  "name": "teitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhushilMistry/Twitter-Search-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhushilMistry/Twitter-Search-App/issues"
+  },
+  "homepage": "https://github.com/KhushilMistry/Twitter-Search-App#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "connect-multiparty": "^2.0.0",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.3",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.11.0"
+  }
+}
