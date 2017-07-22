@@ -1,6 +1,6 @@
-var Twit = require('twit');
+const Twit = require('twit');
 
-var twitter = new Twit({
+const twitter = new Twit({
   consumer_key: '15BflnsnkUIA6r2pMDhP0ZsRx',
   consumer_secret: 'EypW1vj99AO6IMtiCnXheaSjtEvTIEthT4PaOPAwdb8089DWPk',
   access_token: '2960425658-xK5erkCTOV2pu2H3XME0XasptksdbgA6sv2y2TG',

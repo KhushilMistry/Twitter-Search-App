@@ -1,6 +1,6 @@
-const tweetClient = require('../clients/tweetClient');
+var tweetClient = require('../clients/tweetClient');
 
-var router = require('express').Router();
+const router = require('express').Router();
 
 router.route('/').get(tweetClient.fetchHomePageTweets);
 
