@@ -1,6 +1,6 @@
 # Twitter Search App Backend
 This app is backend for Twitter Search App. We are using Node Module twit for API calling.
-#Installing
+# Installing
 ```
 git clone https://github.com/KhushilMistry/Twitter-Search-App.git
 cd Twitter-Search-App
