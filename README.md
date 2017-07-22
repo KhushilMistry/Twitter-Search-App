@@ -7,7 +7,7 @@ cd Twitter-Search-App
 npm install
 nodemon index.js
 ```
-#Testing
+# Testing
 We are using Mocha and Chai for testing. Make sure App is running before strating Testing.
 ```$xslt
 npm test
