@@ -10,6 +10,7 @@ describe("Tweet Search API", function () {
     it("returns status 200", function (done) {
       request(url, function (error, response, body) {
         expect(response.statusCode).to.equal(200);
+
         done();
       });
     });
@@ -28,8 +29,15 @@ describe("Tweet Search API", function () {
     var url = "http://localhost:3000/v1/tweets";
 
     var tweet = {
-      search: 'Hello'
-    };
+      search : "Hello"
+    }
+
+    var options = {
+      method: 'post',
+      body: tweet,
+      json: true,
+      url: url
+    }
 
     it("returns status 404", function (done) {
       request(url, function (error, response, body) {
@@ -39,11 +47,20 @@ describe("Tweet Search API", function () {
     });
 
     it("returns status 200", function (done) {
-      request.post(url, tweet, function (error, response, body) {
+      request(options, function (error, response, body) {
         expect(response.statusCode).to.equal(200);
         done();
       });
     });
+
+    it("Tweet Search Page Size", function (done) {
+      request(options, function (error, response, body) {
+        expect(body).to.not.equal(null);
+        expect(body.statuses.length).equal(100);
+        done();
+      });
+    });
+
   });
 
 });

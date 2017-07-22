@@ -24,7 +24,7 @@ app.use(function (req, res, next) {
 app.use(morgan('combined'));
 app.use(multiparty());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(bodyParser.json({ extended: true }));
 
 app.use('/v1', router);
 
